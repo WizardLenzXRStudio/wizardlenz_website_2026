@@ -1,0 +1,10 @@
+# Old site URLs -> new pages (Netlify / Cloudflare Pages format)
+/index.html                          /                301
+/about.html                          /about/          301
+/services.html                       /studio/         301
+/courses.html                        /academy/        301
+/internship.html                     /academy/        301
+/gallery                             /gallery/        301
+/terms_and_conditions.html           /terms/          301
+/privacy_policy.html                 /privacy/        301
+/cancellation_and_refund_policy.html /refund/         301

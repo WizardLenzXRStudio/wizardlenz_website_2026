@@ -1,0 +1,53 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base page="originals" title="Originals: Games and Tools | Wizardlenz XR Studio" description="The Narrator Lies, ImmersiTest and Mole Mayhem AR: games and tools made in-house by Wizardlenz XR Studio.">
+<div class="view" id="v-originals" data-view="originals">
+<section class="pg-hero" aria-labelledby="orH1">
+  <div class="wrap">
+    <p class="crumb"><a href="/" data-portal="Home">Home</a> / Originals</p>
+    <h1 class="pg-h1" id="orH1" data-decode>We build our own worlds, too.</h1>
+    <p class="lead">Games and tools made in-house: the clearest proof of what our team can ship.</p>
+  </div>
+</section>
+<section style="padding-top:24px" aria-label="Our games and tools">
+  <div class="wrap">
+    <article class="game tilt" style="margin-top:0">
+      <div class="trailer" data-yt="PYfeslTWcpM" style="background-image:linear-gradient(rgba(8,7,26,.35),rgba(8,7,26,.55)),url('https://i.ytimg.com/vi/PYfeslTWcpM/hqdefault.jpg');background-size:cover;background-position:center"><button type="button" class="play" aria-label="Play The Narrator Lies trailer"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#061018"/></svg></button><small>Play the trailer</small><noscript><a href="https://www.youtube.com/watch?v=PYfeslTWcpM" target="_blank" rel="noopener noreferrer">Watch on YouTube</a></noscript></div>
+      <div class="info">
+        <div class="badges"><span class="badge live">Windows · free on itch.io</span><span class="badge">Android · coming soon</span></div>
+        <h3>The Narrator Lies</h3>
+        <p style="color:var(--violet-soft);font-weight:600">A platformer where the hints are the trap.</p><p>Guide One Eye through 50 short, sharp levels while a friendly narrator tells you where it's safe. He's lying. Usually.</p><div class="chips" style="margin-top:14px"><span class="chip" style="font-size:13px;padding:5px 11px">50 levels · 5 chapters</span><span class="chip" style="font-size:13px;padding:5px 11px">Keyboard and controller</span><span class="chip" style="font-size:13px;padding:5px 11px">Free · no ads</span></div>
+        <div class="cta-row" style="margin-top:22px"><a class="btn btn-primary mag" href="https://wizardlenz-xr-studio.itch.io/the-narrator-lies" target="_blank" rel="noopener noreferrer">Download on itch.io</a><a class="btn btn-ghost mag" href="/originals/">Notify me on Android</a></div>
+      </div>
+    </article>
+    <div class="twin">
+      <div class="card">
+        <span class="badge" style="align-self:flex-start;border-color:var(--cyan)">Free tool for XR developers</span>
+        <h3>ImmersiTest</h3>
+        <p style="color:var(--violet-soft);font-weight:600">Test the Experience. Trust the Immersion.</p>
+        <div class="readout" aria-hidden="true">
+          <div class="row"><span>FPS · illustration</span><b id="fpsVal">72.0</b></div>
+          <canvas id="fps"></canvas>
+        </div>
+        <ul><li>Frame timing, FPS and memory from your Unity XR build</li><li>Guided human validation for what a profiler can't see</li><li>No accounts; reports are deleted after 60 minutes</li></ul>
+        <div class="cta-row" style="margin-top:8px"><a class="btn btn-primary btn-sm" href="https://immersitest.wizardlenzxrstudio.com/#/" target="_blank" rel="noopener noreferrer">Open ImmersiTest</a></div>
+      </div>
+      <div class="card">
+        <span class="badge" style="align-self:flex-start">In the lab</span>
+        <h3>Mole Mayhem AR</h3>
+        <div class="badges"><span class="badge">Mixed reality</span><span class="badge">Meta Quest 3</span><span class="badge">In development</span></div>
+        <p style="color:var(--violet-soft);font-weight:600">Your table just became the arcade.</p>
+        <p>Slip on your Quest 3 and watch a whack-a-mole board land on your real table. The moles are cheeky, the hammers are in your hands, and the clock is already ticking.</p>
+        <div class="trailer" style="aspect-ratio:auto;height:150px;transform:none"><small>[Mole Mayhem AR screenshot or clip]</small></div>
+        <a href="/originals/" style="font-weight:600;text-decoration:none;margin-top:auto">Follow the devlog →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section style="padding-top:0" aria-label="Want to publish or partner with us?">
+  <div class="wrap"><div class="band"><div><h2 class="h2" style="margin:0">Want to publish or partner with us?</h2><p class="lead" style="font-size:17px">We are open to publishing, platform and studio partnerships.</p></div><a class="btn btn-primary mag" href="/contact/" data-portal="Contact">Get in touch</a></div></div>
+</section>
+</div>
+</Base>

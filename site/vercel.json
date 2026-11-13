@@ -1,0 +1,13 @@
+{
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/about.html", "destination": "/about/", "permanent": true },
+    { "source": "/services.html", "destination": "/studio/", "permanent": true },
+    { "source": "/courses.html", "destination": "/academy/", "permanent": true },
+    { "source": "/internship.html", "destination": "/academy/", "permanent": true },
+    { "source": "/terms_and_conditions.html", "destination": "/terms/", "permanent": true },
+    { "source": "/privacy_policy.html", "destination": "/privacy/", "permanent": true },
+    { "source": "/cancellation_and_refund_policy.html", "destination": "/refund/", "permanent": true }
+  ]
+}

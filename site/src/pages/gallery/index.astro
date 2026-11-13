@@ -1,0 +1,26 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base page="gallery" title="Gallery | Wizardlenz XR Studio" description="Photos and moments from Wizardlenz XR workshops, programs and events at colleges and universities.">
+<div class="view" id="v-gallery" data-view="gallery">
+<section class="pg-hero" aria-labelledby="gaH1">
+  <div class="wrap">
+    <p class="crumb"><a href="/" data-portal="Home">Home</a> / Gallery</p>
+    <h1 class="pg-h1" id="gaH1" data-decode>Moments from our programs.</h1>
+    <p class="lead">Every program gets its own album, posted by our team soon after it wraps up. Open one to see the photos.</p>
+    <div class="g-tools">
+      <div class="pills" id="gType" role="group" aria-label="Filter by program type" style="margin-top:0"></div>
+      <div class="g-search"><label class="sr-only" for="gQ">Search albums</label><input id="gQ" type="search" placeholder="Search institution or program"></div>
+    </div>
+    <div class="albums" id="gGrid"></div>
+    <p class="g-empty" id="gEmpty" hidden>No albums match that yet. Try another type or search.</p>
+  </div>
+</section>
+
+</div>
+<div id="lb" role="dialog" aria-modal="true" aria-labelledby="lbTitle" hidden>
+  <div class="lb-top"><p class="lb-title" id="lbTitle"></p><button type="button" class="icon-btn" id="lbClose" aria-label="Close album"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="lb-stage" id="lbStage"></div>
+  <div class="lb-nav"><button type="button" class="icon-btn" id="lbPrev" aria-label="Previous photo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button><span id="lbCount"></span><button type="button" class="icon-btn" id="lbNext" aria-label="Next photo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div>
+</div>
+</Base>

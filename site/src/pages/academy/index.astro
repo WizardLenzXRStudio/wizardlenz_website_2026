@@ -1,0 +1,137 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base page="academy" title="XR Academy for Institutions | Wizardlenz XR Studio" description="Workshops, bootcamps and semester courses in AR, VR, MR and XR design, planned with your institution around its departments and dates.">
+<div class="view" id="v-academy" data-view="academy">
+<section class="pg-hero" aria-labelledby="acH1">
+  <div class="wrap">
+    <p class="crumb"><a href="/" data-portal="Home">Home</a> / Academy</p>
+    <div class="acad-top" style="margin-top:8px">
+      <div>
+        <h1 class="pg-h1" id="acH1" data-decode>XR programs, shaped around your department.</h1>
+        <p class="lead">We don't sell fixed courses. We plan every program with your department, around your students, your lab and your dates, then teach it hands-on so students finish with real projects and certificates.</p>
+        <div class="cta-row"><button type="button" class="btn btn-primary mag" data-scroll="planner">Plan your program</button><a class="btn btn-ghost mag" href="/contact/" data-portal="Contact">Talk to our team</a></div>
+        <div class="stats3"><div><b>1,200+</b><span>Students trained</span></div><div><b>25+</b><span>Workshops</span></div><div><b>70+</b><span>Prototypes</span></div></div>
+      </div>
+      <figure class="plens">
+        <img data-photo alt="The Wizardlenz team with participants of a 2026 program at Woxsen University; one is wearing a VR headset." width="1040" height="780">
+        <div class="xr" aria-hidden="true">
+          <img data-photo alt="">
+          <svg viewBox="0 0 1040 780" preserveAspectRatio="xMidYMid slice" font-family="JetBrains Mono, ui-monospace, monospace" font-size="19" font-weight="600">
+              <g fill="none" stroke="#22D3EE" stroke-width="2.5">
+                <rect x="74" y="16" width="490" height="368" rx="6" stroke-dasharray="12 9"/>
+                <circle cx="320" cy="190" r="98"/>
+                <ellipse cx="320" cy="190" rx="98" ry="32"/>
+                <ellipse cx="320" cy="190" rx="40" ry="98"/>
+                <ellipse cx="320" cy="190" rx="78" ry="98"/>
+                <path d="M222 190h196M320 92v196"/>
+                <ellipse cx="320" cy="190" rx="150" ry="42" stroke="#A78BFA" transform="rotate(-14 320 190)"/>
+                <rect x="404" y="246" width="60" height="36" rx="13" stroke="#A78BFA" stroke-width="3.5"/>
+                <path d="M500 194 L452 244" stroke-width="2" stroke-dasharray="6 6"/>
+                <rect x="98" y="434" width="94" height="62" rx="5"/>
+                <path d="M150 432 L150 418" stroke-width="2"/>
+                <rect x="898" y="638" width="140" height="132" rx="8" stroke-dasharray="10 7"/>
+                <path d="M900 600 L930 636" stroke-width="2"/>
+                <path d="M930 236l36-20 36 20v40l-36 20-36-20z M930 236l36 20 36-20 M966 256v40" stroke="#A78BFA"/>
+              </g>
+              <g>
+                <rect x="96" y="32" width="282" height="36" rx="9" fill="#22D3EE"/><text x="110" y="57" fill="#061018">LESSON · SPATIAL UI</text>
+                <rect x="232" y="304" width="196" height="36" rx="9" fill="#22D3EE"/><text x="246" y="329" fill="#061018">3D MODEL · LIVE</text>
+                <rect x="470" y="158" width="320" height="36" rx="9" fill="#A78BFA"/><text x="484" y="183" fill="#120F33">VR HEADSET · HANDS ON</text>
+                <rect x="40" y="384" width="236" height="36" rx="9" fill="#22D3EE"/><text x="54" y="409" fill="#061018">UNITY BUILD · RUN</text>
+                <rect x="744" y="564" width="270" height="36" rx="9" fill="#22D3EE"/><text x="758" y="589" fill="#061018">HEADSETS · CHARGED</text>
+                <rect x="860" y="308" width="166" height="36" rx="9" fill="#A78BFA"/><text x="874" y="333" fill="#120F33">AR POSTER</text>
+              </g>
+            </svg>
+        </div>
+        <div class="lens-ring" aria-hidden="true"></div>
+        <span class="stage-chip">Through the lens · Woxsen University, 2026</span>
+        <figcaption class="stage-hint">Move over the photo to see the room in XR</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="fmtH">
+  <div class="wrap">
+    <p class="eyebrow">Step 1 · Pick a format</p>
+    <h2 class="h2" id="fmtH" data-decode>Five ways to run a program.</h2>
+        <div class="formats" id="formats">
+          <div class="fmt"><span class="dur">6 hours</span><h3>1-day workshop</h3><p>A hands-on introduction for a department, club or tech fest.</p></div>
+          <div class="fmt"><span class="dur">2–5 days</span><h3>Bootcamp</h3><p>Intensive, project-based training over consecutive days.</p></div>
+          <div class="fmt"><span class="dur">30–45 hours</span><h3>Semester course</h3><p>A full module that runs alongside your timetable.</p></div>
+          <div class="fmt"><span class="dur">3–5 days</span><h3>Faculty program</h3><p>Equip your teachers to run XR labs themselves.</p></div>
+          <div class="fmt"><span class="dur">1–4 weeks</span><h3>In-plant training</h3><p>Students work inside our studio on live projects.</p></div>
+        </div>
+  </div>
+</section>
+
+<section id="planner" aria-labelledby="plH">
+  <div class="wrap">
+    <p class="eyebrow">Step 2 · Plan your program</p>
+    <h2 class="h2" id="plH" data-decode>Your program, hour by hour, in a minute.</h2>
+    <p class="lead">Pick your department, the hours you have and the topics you want. You get a draft plan to share with your HOD, and we refine it with you.</p>
+    <div class="planner">
+      <div>
+        <fieldset class="pl-group"><legend>Your department</legend><div class="pills" id="plDept"></div></fieldset>
+        <fieldset class="pl-group"><legend>Hours available</legend><div class="pills" id="plHours"></div></fieldset>
+        <fieldset class="pl-group"><legend>Topics</legend><p class="note" id="plNote"></p><div class="topics" id="plTopics"></div></fieldset>
+      </div>
+      <aside class="plan" aria-label="Draft plan">
+        <p class="k">Draft plan</p>
+        <h3 id="plTitle"></h3>
+        <p class="meta" id="plMeta"></p>
+        <p class="empty" id="plEmpty" hidden>Pick at least one topic to see your plan.</p>
+        <ul id="plRows"></ul>
+        <p class="warn" id="plWarn" hidden></p>
+        <div class="total"><span>Total</span><span id="plTotal"></span></div>
+        <div class="acts">
+          <button type="button" class="btn btn-primary" id="plSend">Send this as a proposal request</button>
+          <button type="button" class="btn btn-ghost" id="plCopy">Copy this plan</button>
+        </div>
+        <p class="small">A draft to start the conversation. We fine-tune topics, hours and dates with your department.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="modH">
+  <div class="wrap">
+    <p class="eyebrow">What we teach</p>
+    <h2 class="h2" id="modH" data-decode>13 topic modules, including a design track.</h2>
+    <p class="lead">Every module is hands-on: students finish with something they built. The design track (VR for Designers, AR for Designers and Immersive Design Portfolio) is made for design and media students.</p>
+    <div class="mods" id="plMods"></div>
+  </div>
+</section>
+
+<section aria-labelledby="smpH">
+  <div class="wrap">
+    <p class="eyebrow">Sample programs</p>
+    <h2 class="h2" id="smpH" data-decode>Starting points, ready to forward to your HOD.</h2>
+    <p class="lead">Each one is a sample, always adjusted to your students and your dates.</p>
+    <div class="samples" id="plSamples"></div>
+  </div>
+</section>
+
+<section aria-labelledby="faqH">
+  <div class="wrap faq-grid">
+    <div>
+      <p class="chip-label">Programs delivered at</p>
+      <div class="chips"><span class="chip">Woxsen University</span><span class="chip">Thiagarajar College of Engineering</span><span class="chip">PERI Institute of Technology</span></div>
+      <figure class="q" style="margin-top:28px"><blockquote>"The presentation was well-structured, covering both fundamental concepts and advanced applications, making it valuable for both beginners and experienced professionals."</blockquote><figcaption><b>Dr K Indira</b><span>Assistant Professor, CSE, Thiagarajar College of Engineering</span></figcaption></figure>
+    </div>
+    <div class="faq">
+      <h2 class="h2" id="faqH" style="font-size:clamp(24px,2.6vw,32px);margin:0 0 18px">Questions colleges ask us</h2>
+      <details open><summary>Do you have fixed courses?</summary><p>No. Every program is planned with your department, around your students and your dates. The hours on this page are typical ranges to help you plan.</p></details>
+      <details><summary>Do students get certificates?</summary><p>Yes. Students who complete a program receive a Wizardlenz XR Studio certificate, which can be verified on our website.</p></details>
+      <details><summary>What happens after we send a plan?</summary><p>We contact you within [X working days] to refine topics, hours and dates, then send a formal proposal.</p></details>
+      <details><summary>What does our lab need?</summary><p>[Computer specs, whether you bring VR headsets, internet and software needs.]</p></details>
+    </div>
+  </div>
+</section>
+
+<section aria-label="Bring XR to your campus" style="padding-top:0">
+  <div class="wrap"><div class="band"><div><h2 class="h2" style="margin:0">Bring XR to your campus.</h2><p class="lead" style="font-size:17px">Send us your plan, or just your department and dates.</p></div><button type="button" class="btn btn-primary mag" data-scroll="planner">Plan your program</button></div></div>
+</section>
+</div>
+</Base>

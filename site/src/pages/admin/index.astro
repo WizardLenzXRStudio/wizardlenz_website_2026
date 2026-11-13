@@ -1,0 +1,56 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base page="admin" title="Gallery admin | Wizardlenz XR Studio" description="Add a new album to the Wizardlenz gallery." noindex>
+<div class="view" id="v-admin" data-view="admin">
+<section class="pg-hero" aria-labelledby="adH1">
+  <div class="wrap admin-wrap">
+    <p class="crumb"><a href="/" data-portal="Home">Home</a> / Gallery admin</p>
+    <h1 class="pg-h1" id="adH1">Gallery admin</h1>
+    <p class="lead">Add a new album after each program. Photos are stored in your Google Drive and appear on the Gallery page and the home page straight away.</p>
+
+    <div class="admin-note" id="adSetup" hidden>
+      Google Drive is not connected yet, so publishing is switched off. You can still try the form below. To connect it, follow <code>docs/gallery-setup.md</code>, then put the web app address in <code>PUBLIC_GALLERY_API</code> in <code>.env</code>.
+    </div>
+
+    <form class="admin-login" id="adLogin" novalidate hidden>
+      <div class="field"><label for="adPw">Admin password</label><input id="adPw" type="password" autocomplete="current-password"></div>
+      <p class="err" id="adLoginErr" role="alert" hidden style="margin:0;color:#FCA5A5;font-size:14px"></p>
+      <div><button type="submit" class="btn btn-primary">Sign in</button></div>
+    </form>
+
+    <div id="adApp" hidden>
+      <div class="admin">
+        <div class="admin-head"><p>New album</p><button type="button" class="btn btn-ghost btn-sm" id="adOut" hidden>Sign out</button></div>
+        <div class="admin-body">
+          <form id="adForm" novalidate>
+            <div class="field full"><label for="adName">Program name</label><input id="adName" type="text" placeholder="AR for Designers bootcamp"></div>
+            <div class="field"><label for="adInst">Institution</label><input id="adInst" type="text" placeholder="Woxsen University"></div>
+            <div class="field"><label for="adDate">Date</label><input id="adDate" type="month"></div>
+            <div class="field full"><label for="adType">Program type</label><select id="adType"><option>Workshop</option><option>Bootcamp</option><option>Semester course</option><option>Faculty program</option><option>In-plant training</option><option>Event</option></select></div>
+            <label class="drop" id="adDrop" for="adFiles"><b>Drop photos here</b><span>or tap to choose from your device. They are resized before upload.</span><input id="adFiles" type="file" accept="image/*" multiple class="sr-only"></label>
+            <p class="thumbs-note" id="adNote" hidden>Photos show in this order. Photo 1 is the album cover. Drag a photo, or use the arrows, to change the order.</p>
+            <div class="thumbs" id="adThumbs"></div>
+            <p class="err" id="adErr" role="alert" hidden></p>
+            <p class="ok" id="adOk" role="status" hidden></p>
+            <div class="prog" id="adProg" hidden><i></i></div>
+            <div class="field full" style="flex-direction:row;flex-wrap:wrap;gap:10px"><button type="submit" class="btn btn-primary" id="adGo">Publish album</button><button type="reset" class="btn btn-ghost">Clear</button></div>
+          </form>
+          <div class="admin-side">
+            <h3>After each program</h3>
+            <ol><li>Type the program name and institution, and pick the date and type.</li><li>Drop in the photos. Up to 40 per album.</li><li>Put them in the order you want. Photo 1 becomes the cover.</li><li>Press Publish and wait for the bar to finish.</li></ol>
+            <p class="note">Longer videos go on YouTube; we link to them on the relevant page.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="h2" style="margin-top:48px;font-size:clamp(22px,3vw,30px)">Albums in your gallery</h2>
+      <div class="alist" id="adList" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+</div>
+<script>
+  import '../../scripts/admin.js';
+</script>
+</Base>

@@ -1,0 +1,30 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base page="contact" title="Contact | Wizardlenz XR Studio" description="Plan an XR program for your institution, start a project for your business, or talk partnerships. Write to Wizardlenz XR Studio.">
+<div class="view" id="v-contact" data-view="contact">
+<section class="pg-hero" aria-labelledby="talkH">
+  <div class="wrap">
+    <p class="crumb"><a href="/" data-portal="Home">Home</a> / Contact</p>
+    <div class="talk" style="margin-top:24px">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h1 id="talkH">Let's talk XR.</h1>
+        <p class="lead" style="font-size:17px">A program for your institution, a project for your business, or a partnership.</p>
+        <div class="contact-lines"><span>+91 99629 04036</span><span>inquiry@wizardlenzxrstudio.com</span></div>
+      </div>
+      <form id="enq">
+        <div class="field"><label for="fName">Name</label><input id="fName" name="name" type="text" autocomplete="name"></div>
+        <div class="field"><label for="fOrg">Organisation</label><input id="fOrg" name="org" type="text" autocomplete="organization"></div>
+        <div class="field"><label for="fEmail">Email</label><input id="fEmail" name="email" type="email" autocomplete="email"></div>
+        <div class="field"><label for="fPhone">Phone</label><input id="fPhone" name="phone" type="tel" autocomplete="tel"></div>
+        <div class="field full"><label for="fWho">I'm reaching out as</label><select id="fWho" name="who"><option>An institution</option><option>A business</option><option>A developer or partner</option></select></div>
+        <div class="field full"><label for="fMsg">What do you have in mind?</label><textarea id="fMsg" name="msg" rows="6"></textarea></div>
+        <div class="field full" style="flex-direction:row"><button type="submit" class="btn btn-primary mag">Send enquiry</button></div>
+        <p id="formNote" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</div>
+</Base>
